@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>A button project</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,6 +17,8 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -24,8 +26,20 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>A Button project</p>
-  <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
+  <div class="camera camera-container">
+      <div id="footage">
+        <video id="video">Video stream not available.</video>
+        <canvas id="canvas">
+        </canvas>
+        <div class="output">
+            <img id="photo" alt="The screen capture will appear in this box.">
+        </div>
+      </div>
+
+        <input id="startbutton" type="image" src="fuji-camera-500x500.png" />
+  </div>
+
+
   <script src="js/app.js"></script>
 
 </body>
